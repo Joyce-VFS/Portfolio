@@ -1,0 +1,5 @@
+This project implements offline and online ranking algorithms to efficiently select and sort the top 10% of players from large datasets. 
+The offline algorithms use heapsort with early stopping and a quickselect/quicksort hybrid to process static data in-place with optimal memory usage. 
+The online algorithm maintains a min-heap of fixed size while streaming data, continuously tracking the highest-level players and recording cutoff thresholds at specified intervals. 
+Key data structures include STL heap operations on raw vectors (avoiding priority queues for memory efficiency), custom player streams for data input, and iterator-based heap manipulation. 
+The project demonstrates the trade-offs between offline batch processing and online streaming algorithms, with an extra credit component that fetches real-time data from a REST API using HTTP requests and JSON parsing.
