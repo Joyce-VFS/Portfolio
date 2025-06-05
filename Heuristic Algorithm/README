@@ -1,0 +1,5 @@
+This project implements a heuristic algorithm to approximate the minimum vertex cover problem for flight network graphs. 
+The goal is to find the smallest set of airports where placing TSA agents would monitor all flights, since every flight connects two airports and at least one endpoint must be covered. 
+The project uses an undirected graph represented as an adjacency list with unordered_map<string, unordered_set<string>> for efficient vertex and edge operations.
+The core algorithm employs a greedy heuristic that repeatedly selects the vertex with the highest degree (most connections), adds it to the cover set, and removes it along with all its edges from the graph until all edges are covered. 
+This approach provides a reasonable approximation to the NP-hard minimum vertex cover problem, demonstrating practical solutions for computationally intractable optimization problems in real-world network scenarios.
